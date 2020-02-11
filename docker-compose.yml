@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+ myapp: 
+  build: .
+  #dockerfile: a.txt # for custo dockerfile insted of -f on commoand line
+  image: saieywebapp:v1 # image name to be build
+  container_name: saiappeyc1
+  ports: 
+  - "9922:80" 
